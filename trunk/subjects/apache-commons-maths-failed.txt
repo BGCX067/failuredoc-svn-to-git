@@ -1,0 +1,13 @@
+org.apache.commons.math.complex.Complex
+org.apache.commons.math.complex.ComplexUtils
+org.apache.commons.math.complex.ComplexField
+org.apache.commons.math.linear.OpenMapRealVector
+org.apache.commons.math.optimization.linear.LinearObjectiveFunction
+org.apache.commons.math.linear.RealVector
+org.apache.commons.math.linear.ArrayRealVector
+org.apache.commons.math.stat.descriptive.moment.StandardDeviation
+org.apache.commons.math.stat.descriptive.MultivariateSummaryStatistics
+org.apache.commons.math.util.MathUtils
+org.apache.commons.math.dfp.DfpField
+org.apache.commons.math.dfp.Dfp
+org.apache.commons.math.dfp.DfpMath

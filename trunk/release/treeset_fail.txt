@@ -1,0 +1,8 @@
+START SEQUENCE
+var0 = prim : int:1 :
+var1 = cons : java.util.ArrayList.<init>(int) :var0
+var2 = cons : java.lang.Object.<init>() :
+var3 = method : java.util.ArrayList.add(java.lang.Object) : var1 var2
+var4 = cons : java.util.TreeSet.<init>(java.util.Collection) : var1
+var5 = method : java.util.Collections.synchronizedSet(java.util.Set) : var4
+END SEQUENCE

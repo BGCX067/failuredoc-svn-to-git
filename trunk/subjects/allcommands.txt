@@ -1,0 +1,23 @@
+1. reproducing apache math:
+
+java -cp .:../../randoop.jar:../../subjects/common-math/commons-math-2.2/commons-math-2.2.jar randoop.main.Main gentests --classlist=./apache-commons-maths-failed.txt --timelimit=50 --output-tests=fail
+
+
+2. reproducing apache primitives:
+
+java -cp .:../../randoop.jar:../../subjects/common-primtives/commons-primitives-1.0/commons-primitives-1.0.jar randoop.main.Main gentests --classlist=./apache-primitives-failed.txt --timelimit=200 --output-tests=fail --junit-classname=PrimitiveTest
+
+
+
+3. reproducing apache commons:
+ java -cp .:../../randoop.jar:../../subjects/commons-collections-3.2.1/commons-collections-3.2.1.jar randoop.main.Main gentests --classlist=./apachecommons-faillist.txt --timelimit=200 --output-tests=fail --junit-classname=CommonsCollectionTest
+
+
+
+4. reproducing time and money:
+java -cp .:../../randoop.jar:../../subjects/timeandmoney/timeandmoney-v0_5_1.jar randoop.main.Main gentests --classlist=./moneyandtimeclass.txt --timelimit=100 --output-tests=fail --junit-classname=TimeAndMoneyTest
+
+
+
+
+

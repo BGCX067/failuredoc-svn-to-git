@@ -1,0 +1,9 @@
+<project name="MergeAllJars" default="onejar" basedir=".">
+  <target name="onejar">
+    <jar id="files" jarfile="failuredoc-0.1.jar">
+      <zipfileset src="failuredoc-core.jar" includes="**/*.java **/*.class"/> 
+      <zipfileset src="plume.jar" includes="**/*.java **/*.class"/>
+      <zipfileset src="jakarta-oro-2.0.8.jar" includes="**/*.java **/*.class"/>
+    </jar>
+  </target>
+</project>

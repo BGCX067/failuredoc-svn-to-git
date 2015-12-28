@@ -1,0 +1,63 @@
+for 0-th statement, there are: 15 candidates.
+for 1-th statement, there are: 8 candidates.
+for 2-th statement, there are: 17 candidates.
+for 3-th statement, there are: 16 candidates.
+for 4-th statement, there are: 10 candidates.
+for 5-th statement, there are: 10 candidates.
+Initialize document inferrer, failed sequence size: 1
+Inferring comments for seq: 
+var0 =  prim : int:1 : 
+var1 =  cons : java.util.ArrayList.<init>(int) : var0 
+var2 =  cons : java.lang.Object.<init>() : 
+var3 =  method : java.util.ArrayList.add(java.lang.Object) : var1 var2 
+var4 =  cons : java.util.TreeSet.<init>(java.util.Collection) : var1 
+var5 =  method : java.util.Collections.synchronizedSet(java.util.Set) : var4 
+
+Diagnosing errors in statistical debugging, trace num: 71, line size (num of statement): 6
+ab state map size before prunning: 14
+ the abstract state map: [1@java.lang.Integer, 10@java.lang.Integer, 4@java.lang.Integer, 144@java.lang.Integer, 2@java.lang.Integer, 0@java.lang.Integer, -1@java.lang.Integer, 117440512@java.lang.Integer, Null@int, 25@java.lang.Integer, 7@java.lang.Integer, 100@java.lang.Integer, 1342177280@java.lang.Integer, {}@failure.state.IgnoreState]
+ ab state map size after prunning: 0
+
+@summarzie_ab_states, for the: 0-th statement, has inferred: false
+ab state map size before prunning: 3
+ the abstract state map: [{elementData:ARRAY_NOT_EMPTY  size:INT_GT_ZERO}@java.util.ArrayList, {}@failure.state.IgnoreState, {elementData:ARRAY_NOT_EMPTY  size:INT_EQ_ZERO}@java.util.ArrayList]
+ ab state map size after prunning: 1
+
+@summarzie_ab_states, for the: 1-th statement, has inferred: true
+ab state map size before prunning: 17
+ the abstract state map: [{}@java.lang.Object, {}@failure.state.IgnoreState, {keySet:OBJ_NULL  entrySet:OBJ_NULL  values:OBJ_NULL}@java.util.Collections$UnmodifiableMap, {cmp:OBJ_NOT_NULL}@java.util.Collections$ReverseComparator2, a@java.lang.String, {}@java.util.AbstractList$ListItr, 1@java.lang.Short, {}@[Ljava.lang.Object;, {}@java.util.Collections$UnmodifiableSortedSet, 100@java.lang.Byte, {m:OBJ_NOT_NULL}@java.util.TreeSet, 10@java.lang.Long, -1.0@java.lang.Double, {}@java.util.Collections$UnmodifiableSet, 10.0@java.lang.Float, {}@java.util.Collections$SynchronizedCollection, true@java.lang.Boolean]
+ ab state map size after prunning: 7
+
+@summarzie_ab_states, for the: 2-th statement, has inferred: true
+ab state map size before prunning: 3
+ the abstract state map: [true@java.lang.Boolean, {}@failure.state.IgnoreState, false@java.lang.Boolean]
+ ab state map size after prunning: 1
+
+@summarzie_ab_states, for the: 3-th statement, has inferred: true
+ab state map size before prunning: 6
+ the abstract state map: [{m:OBJ_NOT_NULL}@java.util.TreeSet, {}@failure.state.IgnoreState, {}@java.util.Collections$UnmodifiableSortedSet, {}@java.util.Collections$UnmodifiableSet, {}@java.util.Collections$EmptySet, {}@java.util.Collections$SynchronizedSortedSet]
+ ab state map size after prunning: 4
+
+@summarzie_ab_states, for the: 4-th statement, has inferred: true
+ab state map size before prunning: 7
+ the abstract state map: [{}@java.util.Collections$SynchronizedSet, {}@failure.state.IgnoreState, {}@java.util.Collections$EmptySet, {}@java.util.Collections$SynchronizedSortedSet, {}@java.util.Collections$UnmodifiableSortedSet, {}@java.util.Collections$UnmodifiableSet, {m:OBJ_NOT_NULL}@java.util.TreeSet]
+ ab state map size after prunning: 5
+
+@summarzie_ab_states, for the: 5-th statement, has inferred: true
+Inferring document for: 1-th statement, object num: 1
+has properties? true
+remove the comment due the equality in single value: []
+The summarized comment: 
+Inferring document for: 2-th statement, object num: 7
+has properties? true
+The summarized comment: implements Comparable
+Inferring document for: 3-th statement, object num: 1
+has properties? true
+The summarized comment: is set to: false
+Inferring document for: 4-th statement, object num: 4
+has properties? true
+The summarized comment:  is changed to type: java.util.Collections$UnmodifiableSortedSet, with value: []
+Inferring document for: 5-th statement, object num: 5
+has properties? true
+The summarized comment:  uses type: java.util.Collections$EmptySet, with value: []
+See the inferred results: [, , implements Comparable, is set to: false,  is changed to type: java.util.Collections$UnmodifiableSortedSet, with value: [],  uses type: java.util.Collections$EmptySet, with value: []]

@@ -1,0 +1,44 @@
+#summary Example document inferred by FailureDoc (experimental results)
+
+= Overview =
+
+We show a set of example document inferred by FailureDoc for the evaluation.
+
+The following sections include subjects description, steps in reproducing the results, and sample tests.
+
+Note that, FailureDoc uses a (pseudo) randomized algorithm to create the value pool. It may produce slightly different results in different environment (e.g., different JVM, available resource).
+
+
+= Examples =
+
+Code for running experiments is under the folder [http://code.google.com/p/failuredoc/source/browse/#svn%2Ftrunk%2Fexperiments experiments]. By default, all documented test is put into the folder `./failuredoc_output`
+
+
+==Subject 1: java.util package ==
+
+Test 1: (error in TreeSet)
+
+Step to produce, run [http://code.google.com/p/failuredoc/source/browse/trunk/experiments/experiment/command/ExplainFailedTreeSet.java Tree Set test driver]
+
+Original failed test: [TreeSetTest.java]
+
+Test output by FailureDoc with documentation: [http://code.google.com/p/failuredoc/source/browse/trunk/failuredoc_output/TreeSetDocumented_Pretty.java TreeSetDocumented.java]
+
+...under construction...
+
+
+==Subject 2: Apache Commons Collections ==
+
+...under construction...
+
+==Subject 3: Apache Commons Math ==
+
+...under construction...
+
+==Subject 4: Apache Commons Primitives ==
+
+...under construction...
+
+==Subject 5: Time And Money ===
+
+...under construction...
